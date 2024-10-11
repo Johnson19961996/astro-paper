@@ -5,6 +5,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
+import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SITE, SOCIALS } from "@config";
@@ -23,37 +24,48 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <h1>Uc Genie</h1>
-      
       <p>
-        This is a hack program for Genshin Impact that, once activated, provides a variety of features to enhance your gaming experience. Click on the Social Links to contact us on <a href="https://t.me/uc_genie" target="_blank">Telegram</a> for a free trial period. Below, please see the introduction.
+        This is a hack program for Genshin Impact that, once activated, provides a variety of features to enhance your gaming experience. Click on the 
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="https://t.me/uc_genie"
+          target="_blank"
+        >
+          Telegram
+        </LinkButton> 
+        to contact us for a free trial period. Below, please see the introduction.
       </p>
 
-      <h2>Comprehensive and powerful features.</h2>
+      <h2 class="font-bold text-skin-accent">Comprehensive and powerful features.</h2>
       <p>
-        Currently, there are 29 stable features available, including enhanced attack, skip cutscenes, wide-range auto looting, one-click teleportation, and more. These features can improve gameplay efficiency and enhance your gaming experience. If you want to learn more about all the features in detail, please click on the <a href="https://999999999.com" target="_blank">Full Feature Breakdown</a> page.
+        Currently, there are 29 stable features available, including enhanced attack, skip cutscenes, wide-range auto looting, one-click teleportation, and more. These features can improve gameplay efficiency and enhance your gaming experience. If you want to learn more about all the features in detail, please click on the 
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="https://999999999.com"
+          target="_blank"
+        >
+          Full Feature Breakdown
+        </LinkButton> page.
       </p>
 
-      <h2>Safety, safety, and more safety.</h2>
+      <h2 class="font-bold text-skin-accent">Safety, safety, and more safety.</h2>
       <p>
         At UC Genie, player safety is our top priority. Our development philosophy is centered around players, ensuring that we never introduce any risky features. Before any update, our Beta testers conduct rigorous testing for over two weeks. Since the initial release in 2021, there have been no account bans worldwide.
       </p>
 
-      <h2>Game Version: GLOBAL</h2>
-      <h2>Supported Operating Systems: Windows 10/11</h2>
-      
+      <p><strong>Game Version:</strong> GLOBAL</p>
+      <p><strong>Supported Operating Systems:</strong> Windows 10/11</p>
+
       <div class="buy-button-wrapper">
-        <a href="https://www.ucgenie.com/" target="_blank" class="buy-button"><strong>Click to Buy Uc Genie Store</strong></a>
+        <LinkButton href="https://www.ucgenie.com" class="text-lg font-bold">
+          Click to Buy Uc Genie Store
+        </LinkButton>
       </div>
 
-      {
-        // Social Links Section
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
+      <div class="social-wrapper mt-6">
+        <div class="social-links">Social Links:</div>
+        <Socials />
+      </div>
     </section>
 
     <Hr />
@@ -116,71 +128,34 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    padding-bottom: 6rem;
-    padding-top: 8rem;
+    @apply pb-6 pt-8;
   }
   #hero h1 {
-    margin: 4rem 0;
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: bold;
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
   }
   #hero p {
-    margin: 2rem 0;
+    @apply my-2;
   }
-  #hero h2 {
-    color: var(--theme-color-orange); /* Set heading color to theme orange */
-    margin-top: 20px; /* Add spacing between sections */
-  }
-  
   .buy-button-wrapper {
-    margin-top: 30px; /* Adjust position to above Social Links */
-    text-align: center;
+    @apply my-6 text-lg font-bold;
   }
-  
-  .buy-button {
-    font-size: 1.5rem; /* Increase font size */
-    font-weight: bold; /* Bold the text */
-    color: var(--theme-color-orange); /* Set button text color to orange */
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--theme-color-orange);
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-  .buy-button:hover {
-    background-color: var(--theme-color-orange); 
-    color: white;
-  }
-
   .social-wrapper {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
-    margin-bottom: 1rem;
-    margin-right: 2rem;
-    white-space: nowrap;
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    padding-bottom: 6rem;
-    padding-top: 12rem;
+    @apply pb-6 pt-12;
   }
   #featured h2,
   #recent-posts h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
+    @apply text-2xl font-semibold tracking-wide text-skin-accent;
   }
   .all-posts-btn-wrapper {
-    margin: 8rem 0;
-    text-align: center;
+    @apply my-8 text-center;
   }
 </style>
