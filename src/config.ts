@@ -7,8 +7,7 @@ export const SITE: Site = {
   desc: "A comprehensive resource for Genshin Impact hacks, cheats, and tools.",
   title: "Genshin Impact Hack",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
-  defaultTheme: 'dark', 
+  lightAndDarkMode: false,
   postPerIndex: 4,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
