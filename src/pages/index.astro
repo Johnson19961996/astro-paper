@@ -22,50 +22,47 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <Layout>
   <Header />
   <main id="main-content">
-    <section id="hero">
-      <h1>Uc Genie</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a>
+<section id="hero">
+  <h1>Uc Genie</h1>
+  <p>
+    This is a hack program for Genshin Impact that, once activated, provides a variety of features to enhance your gaming experience. Click on the 
+    <LinkButton
+      className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+      href="https://t.me/uc_genie"
+      target="_blank"
+    >
+      Telegram
+    </LinkButton> 
+    to contact us for a free trial period. Below, please see the introduction.
+  </p>
 
-      <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section>
+  <h2 class="font-bold">Comprehensive and powerful features.</h2>
+  <p>
+    Currently, there are 29 stable features available, including enhanced attack, skip cutscenes, wide-range auto looting, one-click teleportation, and more. These features can improve gameplay efficiency and enhance your gaming experience. If you want to learn more about all the features in detail, please click on the 
+    <LinkButton
+      className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+      href="https://999999999.com"
+      target="_blank"
+    >
+      Full Feature Breakdown
+    </LinkButton> page.
+  </p>
+
+  <h2 class="font-bold">Safety, safety, and more safety.</h2>
+  <p>
+    At UC Genie, player safety is our top priority. Our development philosophy is centered around players, ensuring that we never introduce any risky features. Before any update, our Beta testers conduct rigorous testing for over two weeks. Since the initial release in 2021, there have been no account bans worldwide.
+  </p>
+
+  <p><strong>Game Version:</strong> GLOBAL</p>
+  <p><strong>Supported Operating Systems:</strong> Windows 10/11</p>
+
+  <div class="buy-button-wrapper">
+    <LinkButton href="/store">
+      Click to Buy Uc Genie Store
+    </LinkButton>
+  </div>
+</section>
+
 
     <Hr />
 
