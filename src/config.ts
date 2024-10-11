@@ -28,16 +28,16 @@ export const LOGO_IMAGE = {
 
 export const SOCIALS: SocialObjects = [
   {
-    name: "Telegram",
+    name: "Github",
     href: "https://t.me/uc_genie",
     linkTitle: ` ${SITE.title} on Telegram`,
-    active: true,
+    active: false,
   },
   {
-    name: "Discord",
+    name: "Facebook",
     href: "https://discord.com/invite/rdkrpzYY",
     linkTitle: `${SITE.title} on Discord`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
@@ -107,9 +107,9 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Discord",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://discord.com/invite/rdkrpzYY",
     linkTitle: `${SITE.title} on Discord`,
-    active: false,
+    active: true,
   },
   {
     name: "GitLab",
@@ -137,9 +137,9 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Telegram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://t.me/uc_genie",
     linkTitle: `${SITE.title} on Telegram`,
-    active: false,
+    active: true,
   },
   {
     name: "Mastodon",
