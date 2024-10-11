@@ -28,18 +28,18 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         This is a hack program for Genshin Impact that, once activated, provides a variety of features to enhance your gaming experience. Click on the Social Links to contact us on <a href="https://t.me/uc_genie" target="_blank">Telegram</a> for a free trial period. Below, please see the introduction.
       </p>
 
-      <h2>**Comprehensive and powerful features.**</h2>
+      <h2>Comprehensive and powerful features.</h2>
       <p>
         Currently, there are 29 stable features available, including enhanced attack, skip cutscenes, wide-range auto looting, one-click teleportation, and more. These features can improve gameplay efficiency and enhance your gaming experience. If you want to learn more about all the features in detail, please click on the <a href="https://999999999.com" target="_blank">Full Feature Breakdown</a> page.
       </p>
 
-      <h2>**Safety, safety, and more safety.**</h2>
+      <h2>Safety, safety, and more safety.</h2>
       <p>
         At UC Genie, player safety is our top priority. Our development philosophy is centered around players, ensuring that we never introduce any risky features. Before any update, our Beta testers conduct rigorous testing for over two weeks. Since the initial release in 2021, there have been no account bans worldwide.
       </p>
 
-      <h2>**Game Version: GLOBAL**</h2>
-      <h2>**Supported Operating Systems: Windows 10/11**</h2>
+      <h2>Game Version: GLOBAL</h2>
+      <h2>Supported Operating Systems: Windows 10/11</h2>
       
       <div class="buy-button-wrapper">
         <a href="https://www.ucgenie.com/" target="_blank" class="buy-button"><strong>Click to Buy Uc Genie Store</strong></a>
@@ -116,28 +116,32 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pb-6 pt-8;
+    padding-bottom: 6rem;
+    padding-top: 8rem;
   }
   #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    margin: 4rem 0;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
   }
   #hero p {
-    @apply my-2;
+    margin: 2rem 0;
   }
   #hero h2 {
-    color: var(--theme-color-orange); /* 设置标题为主题橙色 */
-    margin-top: 20px; /* 标题之间间隔一行 */
+    color: var(--theme-color-orange); /* Set heading color to theme orange */
+    margin-top: 20px; /* Add spacing between sections */
   }
   
   .buy-button-wrapper {
-    margin-top: 30px; /* 调整到 Social Links 上方 */
+    margin-top: 30px; /* Adjust position to above Social Links */
     text-align: center;
   }
   
   .buy-button {
-    font-size: 1.5rem; /* 增加字体大小 */
-    font-weight: bold; /* 加粗 */
-    color: var(--theme-color-orange); /* 设置橙色 */
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Bold the text */
+    color: var(--theme-color-orange); /* Set button text color to orange */
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
@@ -152,22 +156,31 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
 
   .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    white-space: nowrap;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pb-6 pt-12;
+    padding-bottom: 6rem;
+    padding-top: 12rem;
   }
   #featured h2,
   #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
   }
   .all-posts-btn-wrapper {
-    @apply my-8 text-center;
+    margin: 8rem 0;
+    text-align: center;
   }
 </style>
