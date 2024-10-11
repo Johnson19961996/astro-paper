@@ -8,6 +8,7 @@ export const SITE: Site = {
   title: "Genshin Impact Hack",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
+  defaultTheme: 'dark', 
   postPerIndex: 4,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
